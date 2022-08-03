@@ -6,9 +6,8 @@ public class Details {
 
     private String description = null;
 
-    public Details name(String name) {
+    public void setName(String name) {
         this.name = name;
-        return this;
     }
 
     public String getName() {
@@ -16,9 +15,8 @@ public class Details {
     }
 
 
-    public Details description(String description) {
+    public void setDescription(String description) {
         this.description = description;
-        return this;
     }
 
     public String getDescription() {

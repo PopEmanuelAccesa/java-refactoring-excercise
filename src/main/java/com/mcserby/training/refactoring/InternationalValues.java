@@ -1,160 +1,48 @@
 package com.mcserby.training.refactoring;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class InternationalValues {
 
-    private Details uk = null;
+    private Map<String, Details> detailsMap;
 
-    private Details nl = null;
+    InternationalValues()
+    {
+        detailsMap = new HashMap<>();
+        detailsMap.put("Uk", null);
+        detailsMap.put("Nl", null);
+        detailsMap.put("De", null);
+        detailsMap.put("Fr", null);
+        detailsMap.put("Es", null);
+        detailsMap.put("It", null);
+        detailsMap.put("At", null);
+        detailsMap.put("ChFr", null);
+        detailsMap.put("ChDe", null);
+        detailsMap.put("Ru", null);
+        detailsMap.put("Hr", null);
+        detailsMap.put("Gr", null);
+        detailsMap.put("Sl", null);
+        detailsMap.put("ChIt", null);
+        detailsMap.put("BeFr", null);
+        detailsMap.put("LuDe", null);
+        detailsMap.put("Li", null);
+        detailsMap.put("Pl", null);
+        detailsMap.put("Bl", null);
+        detailsMap.put("Ua", null);
+        detailsMap.put("Cz", null);
+        detailsMap.put("Sv", null);
+        detailsMap.put("CaEs", null);
+        detailsMap.put("Zh", null);
+        detailsMap.put("LuFr", null);
+        detailsMap.put("BeNl", null);
 
-    private Details de = null;
-
-    private Details fr = null;
-
-    private Details es = null;
-
-    private Details it = null;
-
-    private Details at = null;
-
-    private Details chFr = null;
-
-    private Details chDe = null;
-
-    private Details ru = null;
-
-    private Details hr = null;
-
-    private Details gr = null;
-
-    private Details sl = null;
-
-    private Details chIt = null;
-
-    private Details beFr = null;
-
-    private Details luDe = null;
-
-    private Details li = null;
-
-    private Details pl = null;
-
-    private Details bl = null;
-
-    private Details ua = null;
-
-    private Details cz = null;
-
-    private Details sv = null;
-
-    private Details caEs = null;
-
-    private Details zh = null;
-
-    private Details beNl = null;
-
-    private Details luFr = null;
-
-    public Details getUk() {
-        return uk;
     }
 
-    public Details getNl() {
-        return nl;
+    public Details getDetail(String name) {
+        return detailsMap.get(name);
     }
-
-    public Details getDe() {
-        return de;
-    }
-
-    public Details getFr() {
-        return fr;
-    }
-
-    public Details getEs() {
-        return es;
-    }
-
-    public Details getIt() {
-        return it;
-    }
-
-    public Details getAt() {
-        return at;
-    }
-
-    public Details getChFr() {
-        return chFr;
-    }
-
-    public Details getChDe() {
-        return chDe;
-    }
-
-    public Details getRu() {
-        return ru;
-    }
-
-    public Details getHr() {
-        return hr;
-    }
-
-    public Details getGr() {
-        return gr;
-    }
-
-    public Details getSl() {
-        return sl;
-    }
-
-    public Details getChIt() {
-        return chIt;
-    }
-
-    public Details getBeFr() {
-        return beFr;
-    }
-
-    public Details getLuDe() {
-        return luDe;
-    }
-
-    public Details getLi() {
-        return li;
-    }
-
-    public Details getPl() {
-        return pl;
-    }
-
-    public Details getBl() {
-        return bl;
-    }
-
-    public Details getUa() {
-        return ua;
-    }
-
-    public Details getCz() {
-        return cz;
-    }
-
-    public Details getSv() {
-        return sv;
-    }
-
-    public Details getCaEs() {
-        return caEs;
-    }
-
-    public Details getZh() {
-        return zh;
-    }
-
-    public Details getBeNl() {
-        return beNl;
-    }
-
-    public Details getLuFr() {
-        return luFr;
+    public void setDetail(String name, Details value) {
+         detailsMap.put(name, value);
     }
 }
